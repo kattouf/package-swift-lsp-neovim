@@ -40,7 +40,7 @@ Download the latest release from [GitHub releases](https://github.com/kattouf/pa
 **With [lazy.nvim](https://github.com/folke/lazy.nvim):**
 ```lua
 {
-  'kattouf/package-swift-lsp.nvim',
+  'kattouf/package-swift-lsp-neovim',
   ft = 'swift',
   config = function()
     require('package-swift-lsp').setup()
@@ -51,7 +51,7 @@ Download the latest release from [GitHub releases](https://github.com/kattouf/pa
 **With [packer.nvim](https://github.com/wbthomason/packer.nvim):**
 ```lua
 use {
-  'kattouf/package-swift-lsp.nvim',
+  'kattouf/package-swift-lsp-neovim',
   ft = 'swift',
   config = function()
     require('package-swift-lsp').setup()
@@ -62,7 +62,7 @@ use {
 
 **Manual installation:**
 ```bash
-git clone https://github.com/kattouf/package-swift-lsp.nvim ~/.config/nvim/pack/plugins/start/package-swift-lsp.nvim
+git clone https://github.com/kattouf/package-swift-lsp-neovim ~/.config/nvim/pack/plugins/start/package-swift-lsp-neovim
 ```
 
 ## Configuration
