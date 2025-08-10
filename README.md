@@ -1,6 +1,8 @@
-# package-swift-lsp-neovim
+# Package.swift LSP for Neovim
 
 Neovim LSP client for [package-swift-lsp](https://github.com/kattouf/package-swift-lsp) - provides smart completions for Swift Package Manager's `Package.swift` manifest files.
+
+![demo](https://github.com/user-attachments/assets/017d4aea-8b16-49d1-b818-6386b9d9b066)
 
 ## Features
 
