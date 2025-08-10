@@ -1,0 +1,10 @@
+# Vim/Neovim
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
