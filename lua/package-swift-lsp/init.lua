@@ -89,18 +89,4 @@ function M.setup(opts)
     vim.notify('package-swift-lsp: Configured for Package.swift completions', vim.log.levels.INFO)
 end
 
--- Command to open LSP logs
-vim.api.nvim_create_user_command('PackageSwiftLSPLogs', function()
-    vim.cmd('edit ' .. vim.lsp.get_log_path())
-end, { desc = 'Open LSP log file' })
-
--- Command to restart package-swift-lsp
-vim.api.nvim_create_user_command('PackageSwiftLSPRestart', function()
-    local clients = vim.lsp.get_clients({ name = 'package-swift-lsp' })
-    for _, client in ipairs(clients) do
-        vim.lsp.stop_client(client.id, true)
-    end
-    vim.notify('package-swift-lsp: Restarted', vim.log.levels.INFO)
-end, { desc = 'Restart package-swift-lsp server' })
-
 return M

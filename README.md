@@ -89,18 +89,12 @@ require('package-swift-lsp').setup({
 })
 ```
 
-## Commands
-
-- `:PackageSwiftLSPLogs` - Open LSP log file for debugging
-- `:PackageSwiftLSPRestart` - Restart the package-swift-lsp server
-- `:LspInfo` - Show all active LSP clients (built-in Neovim command)
-
 ## Troubleshooting
 
 ### LSP not starting
 - Check binary is in PATH: `which package-swift-lsp`
 - Check LSP health: `:checkhealth vim.lsp`
-- View LSP logs: `:PackageSwiftLSPLogs`
+- View LSP logs: `:LspLog`
 
 ### No completions
 - Save the file after adding dependencies (required for product completions)
